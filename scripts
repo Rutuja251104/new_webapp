@@ -1,0 +1,8 @@
+install_dependencies.sh:
+#!/bin/bash
+cd /home/ec2-user/node-app
+npm install
+start_server.sh:
+#!/bin/bash
+cd /home/ec2-user/node-app
+node app.js > app.log 2>&1 &
